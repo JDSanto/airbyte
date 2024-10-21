@@ -135,6 +135,46 @@
         }
       }
     },
+    "learning_stage_info": {
+      "type": ["null", "object"],
+      "properties": {
+        "id": {
+          "type": ["null", "string"]
+        },
+        "learning_stage_info": {
+          "type": ["null", "object"],
+          "properties": {
+            "attribution_windows": {
+              "type": ["null", "array"],
+              "items": ["null", "string"]
+            },
+            "conversions": {
+              "type": ["null", "integer"]
+            },
+            "last_sig_edit_ts": {
+              "type": ["null", "integer"]
+            },
+            "status": {
+              "type": ["null", "string"]
+            }
+          }
+        }
+        }
+    },
+    "attribution_spec": {
+      "type": ["null", "array"],
+      "items": {
+        "type": "object",
+        "properties": {
+          "event_type": {
+            "type": "string"
+          },
+          "window_days": {
+            "type": "integer"
+          }
+        }
+      }
+    },
     "adlabels": {
       "description": "Labels associated with the ad set.",
       "type": ["null", "array"],
